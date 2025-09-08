@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ImcService from "../services/ImcService";
+import ImcService from "../../service/ImcService";
 import Header from '../../components/Header/Header'
 
 const Imc = () => {
@@ -26,7 +26,7 @@ const Imc = () => {
 
   return (
     <div>
-      <Header pagina="Calculo">
+      <Header pagina="Calculo" />
       <h1>Faça o calculo IMC</h1>
       <label>Nome:</label><br/>
       <input value={imc.nome} onChange={handleChange} type="text" name="nome"/><br/>
